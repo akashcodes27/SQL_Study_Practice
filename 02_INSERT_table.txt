@@ -10,7 +10,7 @@ CREATE TABLE student(
 INSERT INTO student(name)
 VALUES("Alex")
 
-
+------------------------------------------------------------------------------------
 
 
 Question2
@@ -26,10 +26,16 @@ VALUES('353553', "Self help", 400),
 ('95858', "ghost", 300),
 ('554545', "heaven", 100)
 
+------------------------------------------------------------------------------------
+
+CREATE TABLE orders(
+    order_id INT PRIMARY KEY,
+    amount INT NOT NULL,
+    order_date DATE DEFAULT CURRENT_DATE
+)
 
 
-
-
-
+INSERT INTO orders(order_id, amount),
+VALUES(1, 500)
 
 
