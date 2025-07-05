@@ -187,9 +187,18 @@ CREATE TABLE comments(
 Write a query to insert a comment “Great post!” on post id 7.
 
 INSERT INTO comments(post_id, content),
-VALUES(7, "Great Post!")
+VALUES(7, "Great Post!')
 
 -------------------------------------------------------------------------------------
+
+Suppose you want to copy data from table old_products to table new_products, but only for products with price below 50. Write the INSERT … SELECT query.
+
+INSERT INTO new_products (column1, column2, ..., price)
+SELECT column1, column2, ..., price
+FROM old_products
+WHERE price < 50;
+
+Pattern: insert into newtable, select from oldtable
 
 
 
