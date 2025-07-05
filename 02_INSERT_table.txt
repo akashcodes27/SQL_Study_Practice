@@ -130,6 +130,14 @@ CREATE TABLE students(
 
 );
 
+Insert enrollments for student 10 into courses 101, 102, and 103 in a single INSERT statement.
+
+INSERT INTO students(student_id, course_id),
+VALUES(1, 101),
+(2, 102),
+(3, 103)
+
+
 -------------------------------------------------------------------------------------
 
 
