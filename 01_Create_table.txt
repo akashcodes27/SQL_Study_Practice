@@ -1,8 +1,55 @@
+Create table basics
+
+
 CREATE TABLE cats(
     id INT PRIMARY KEY,
     name VARCHAR(100),
     age INT 
-)
+);
+
+
+Create Table with constraints
+
+
+CREATE TABLE cats(
+    id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT DEFAULT 1,
+    microchip_number VARCHAR(20) UNIQUE NOT NULL
+
+);
+
+
+Create table with auto-increment
+AUTO_INCREMENT automatically increments the index value even when we dont explicitely pass it while inserting rows in the table 
+
+CREATE TABLE cats(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    age INT DEFAULT 2, 
+    name VARCHAR(40),
+    microchip_number INT NOT NULL UNIQUE 
+
+);
+
+
+CREATE TABLE with FOREIGN KEY 
+CREATE TABLE owner(
+    owner_id INT AUTO_INCREMENT PRIMARY KEY,
+    owner_name VARCHAR(100) NOT NULL,
+
+);
+
+CREATE TABLE cats(
+    cat_name VARCHAR(100),
+    cat_id INT PRIMARY KEY,
+    age INT NOT NULL,
+    owner_id INT,
+    FOREIGN KEY(owner_id) REFERENCES owner(owner_id)
+
+);
+
+
+
 
 
 
