@@ -59,7 +59,11 @@ CREATE TABLE user(
 );
 
 
-
+Create table with multiple primary keys
+CREATE TABLE cats(
+    cat_id AUTO_INCREMENT PRIMARY KEY, 
+    age 
+)
 
 
 

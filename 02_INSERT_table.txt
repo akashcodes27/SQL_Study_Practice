@@ -101,6 +101,16 @@ See how we have not null and default together
 
 -----------------------------------------------------------------------------------
 
+CREATE TABLE Employee(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    last_name VARCHAR(50) NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
+    middle_name VARCHAR(50),
+    age INT NOT NULL, 
+    current_status VARCHAR(50) NOT NULL DEFAULT 'employed'
+
+);
+
 
 
 
