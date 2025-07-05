@@ -28,6 +28,7 @@ VALUES('353553', "Self help", 400),
 
 ------------------------------------------------------------------------------------
 
+Question3
 CREATE TABLE orders(
     order_id INT PRIMARY KEY,
     amount INT NOT NULL,
@@ -37,5 +38,49 @@ CREATE TABLE orders(
 
 INSERT INTO orders(order_id, amount),
 VALUES(1, 500)
+
+------------------------------------------------------------------------------------
+
+Question4
+CREATE TABLE employees(
+    emp_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    salary INT,
+);
+
+
+-----------------------------------------------------------------------------------
+
+Question5
+CREATE TABLE employee(
+    emp_id INT PRIMARY KEY,
+    name VARCHAR(100),
+    salary INT,
+
+);
+
+INSERT INTO employee(emp_id, name, salary)
+SELECT emp_id, name, salary FROM employee_backup
+WHERE salary > 60000
+
+--------------------------------------------------------------------------------------
+
+CREATE TABLE pets(
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    species VARCHAR(100) DEFAULT 'orange cat'
+
+);
+
+
+INSERT INTO pets(id, name),
+VALUES(5, "Buddy")
+
+
+-------------------------------------------------------------------------------------
+
+
+
+
 
 
