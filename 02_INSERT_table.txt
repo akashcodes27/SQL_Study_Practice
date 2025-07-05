@@ -141,5 +141,28 @@ VALUES(1, 101),
 -------------------------------------------------------------------------------------
 
 
+There is a table payments with columns:
+
+pay_id (primary key)
+
+amount
+
+pay_date default today date
+
+Write an insert to add a payment of amount 200 with today’s date, assuming today is '2025-07-04'.
+
+
+CREATE TABLE payments(
+    pay_id INT PRIMARY KEY,
+    amount INT,
+    pay_date DATE DEFAULT CURRENT_DATE
+
+);
+
+
+INSERT INTO payments(pay_id, amount, pay_date)
+VALUES (1, 200, '2025-07-04')
+
+-------------------------------------------------------------------------------------
 
 
