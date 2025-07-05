@@ -79,6 +79,28 @@ VALUES(5, "Buddy")
 
 -------------------------------------------------------------------------------------
 
+When we are dealing with fields that need mandatory values (NOT NULL)
+
+And if we dont pass a value while inserting, the error message would say "There exists no default value". What this means is that:
+
+If we are defining a field as NOT NULL, then it also must have a DEFAULT VALUE incase user does not provide a value, because this field cannot stay empty
+
+If however NOT NULL is not enforced, then the field can remain empty and the user need not provide any value 
+
+
+INSERT INTO cats3() VALUES();
+
+Combine NOT NULL and DEFAULT:
+
+CREATE TABLE cats4  (    
+    name VARCHAR(20) NOT NULL DEFAULT 'unnamed',    
+    age INT NOT NULL DEFAULT 99 
+);
+
+See how we have not null and default together 
+
+-----------------------------------------------------------------------------------
+
 
 
 
