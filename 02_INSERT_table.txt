@@ -112,6 +112,25 @@ CREATE TABLE Employee(
 );
 
 
+-------------------------------------------------------------------------------------
+
+
+Create a Table students_courses has columns:
+
+student_id
+
+course_id
+with a composite primary key on both columns.
+
+
+CREATE TABLE students(
+    student_id INT,
+    course_id INT,
+    PRIMARY KEY(student_id, course_id)
+
+);
+
+-------------------------------------------------------------------------------------
 
 
 
