@@ -49,6 +49,9 @@ CREATE TABLE cats(
 );
 
 
+Creating table with CHECK constraint 
+We can create a table with CHECK constraint. For example if we create a new account on instagram, insta prolly uses a CHECK constraint on its databases to ensure that users below 18 years of age are not allowed to create new accounts on the platform 
+
 
 
 
