@@ -1,4 +1,4 @@
-
+Question1
 CREATE TABLE student(
     student_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -13,6 +13,18 @@ VALUES("Alex")
 
 
 
+Question2
+CREATE TABLE books(
+    isbn VARCHAR(50) PRIMARY KEY,
+    title VARCHAR(100),
+    price FLOAT (10,2)    #implies total 10 digits and 2 of those on right of decimal
+ 
+);
+
+INSERT INTO books(isbn, title, price)
+VALUES('353553', "Self help", 400),
+('95858', "ghost", 300),
+('554545', "heaven", 100)
 
 
 
