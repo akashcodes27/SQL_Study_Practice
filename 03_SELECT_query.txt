@@ -139,5 +139,14 @@ JOIN Departments d ON e.emp_id = d.emp_id
 If we use just JOIN, then its most likely INNER JOIN 
 --------------------------------------------------------------------------------------
 
+Qs17: Get names of employees whose salary is above average salary.
+
+SELECT name FROM Employees
+WHERE salary > (
+    SELECT AVG(salary) FROM Employees 
+);
+
+--------------------------------------------------------------------------------------
+
 
 
