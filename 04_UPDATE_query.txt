@@ -35,6 +35,13 @@ WHERE salary<50000;
 
 --------------------------------------------------------------------------------------
 
+Qs4: Change all "HR" department names to "Human Resources"
+
+UPDATE Employees SET department='Human Resources'
+WHERE department='HR';
+
+--------------------------------------------------------------------------------------
+
 
 
 
