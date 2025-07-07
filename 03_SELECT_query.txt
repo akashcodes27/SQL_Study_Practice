@@ -48,7 +48,11 @@ SELECT * FROM Employees
 WHERE name LIKE 'A%';
 
 
+--------------------------------------------------------------------------------------
 
+qs6: Get employees whose name ends with 'e'.
+SELECT * FROM Employees 
+WHERE name LIKE '%e';
 
 
 
