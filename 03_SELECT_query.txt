@@ -84,3 +84,10 @@ GROUP BY Department
 
 -------------------------------------------------------------------------------------
 
+
+Qs10: Get average salary for each department.
+SELECT department, AVG(salary) FROM Employees 
+GROUP BY department 
+
+------------------------------------------------------------------------------------
+
