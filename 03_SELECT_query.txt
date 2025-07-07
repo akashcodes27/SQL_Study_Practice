@@ -129,7 +129,15 @@ We ordered all the rows in terms of Salary descending wise, then we used LIMIT t
 
 -------------------------------------------------------------------------------------
 
+Qs16: Join employees with departments table to get department name.
 
+SELECT e.name, d.name
+FROM Employees e 
+JOIN Departments d ON e.emp_id = d.emp_id
+
+
+If we use just JOIN, then its most likely INNER JOIN 
+--------------------------------------------------------------------------------------
 
 
 
