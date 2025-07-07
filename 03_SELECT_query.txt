@@ -101,5 +101,10 @@ HAVING COUNT(*) > 1   #Used whenever we want to impose condition on a group colu
 Qs12: Get the maximum salary from employees.
 SELECT MAX(*) FROM Employee
 
+-------------------------------------------------------------------------------------
 
+Qs13: Get the distinct departments from employees.
+SELECT department DISTINCT FROM Employees  (WRONG XXXX)
+SELECT DISTINCT department FROM Employees (RIGHT) 
 
+--------------------------------------------------------------------------------------
