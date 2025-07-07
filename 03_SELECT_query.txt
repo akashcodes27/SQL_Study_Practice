@@ -54,6 +54,10 @@ qs6: Get employees whose name ends with 'e'.
 SELECT * FROM Employees 
 WHERE name LIKE '%e';
 
+--------------------------------------------------------------------------------------
 
+qs7: Get all employees ordered by salary descending.
+SELECT * FROM Employees 
+ORDER BY salary DESC;
 
 
