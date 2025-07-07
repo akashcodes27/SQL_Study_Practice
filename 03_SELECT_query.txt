@@ -73,3 +73,14 @@ Which is better? count(*) will always give us the total count of the table regar
 
 count(anycolumn) may give us all values, may not. If it is a primary key, then its as good as count(*), because primary key column will contain no NULL value. But other columns can contain NULL values and count(othercolumn) will only count rows where values exist (skipping the null entries)
 
+
+--------------------------------------------------------------------------------------
+
+
+Qs9: Count how many employees are in each department.
+
+SELECT department, count(*) FROM Employees 
+GROUP BY Department 
+
+-------------------------------------------------------------------------------------
+
