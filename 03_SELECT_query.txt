@@ -148,5 +148,19 @@ WHERE salary > (
 
 --------------------------------------------------------------------------------------
 
+Qs18:  Get total salary paid in the IT department.
+
+This Solution is Technically Valid but less effecient
+SELECT department, SUM(salary) FROM Employees 
+GROUP BY Department 
+HAVING Department = 'IT'
+
+A better solution 
+SELECT SUM(salary) FROM Employees 
+WHERE Department = 'IT';
+
+--------------------------------------------------------------------------------------
+
+
 
 
