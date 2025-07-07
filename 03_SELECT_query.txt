@@ -27,6 +27,11 @@ WHERE salary > 55000
 -------------------------------------------------------------------------------------
 
 Qs3: Get employees from HR or Sales.
+SELECT * FROM Employees
+WHERE department = 'HR' OR 'SALES' ;  (WRONG XXXXX)
+
+SELECT * FROM Employees 
+WHERE department IN ('HR', 'SALES');
 
 
 
