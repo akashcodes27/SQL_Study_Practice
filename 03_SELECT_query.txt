@@ -116,3 +116,8 @@ WHERE salary = (
 )
 
 
+(Remember we cant do this: WHERE salary = MAX(SALARY)), aggregates cant be used directly with a conditional, we instead use nested queries
+--------------------------------------------------------------------------------------
+
+Qs15: Get the top 2 highest paid employees 
+
