@@ -1,0 +1,20 @@
+
+UPDATE Query 
+Format: UPDATE, SET, WHERE 
+
+UPDATE Employees SET emp_name='John Doe', emp_id='000'
+#In this case, we have used UPDATE and SET 
+This updates all rows under emp_name column to 'John Doe'
+This updates all rows under emp_id column to '000'
+
+
+
+
+
+
+
+
+
+
+
+
