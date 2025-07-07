@@ -16,6 +16,18 @@ qs1: Get all employees from the IT department
 SELECT name FROM Employees 
 WHERE department = 'IT';
 
+--------------------------------------------------------------------------------------
+
+
+Qs2: Find employees with salary greater than 55000.
+SELECT name FROM Employees 
+WHERE salary > 55000
+
+
+-------------------------------------------------------------------------------------
+
+Qs3: Get employees from HR or Sales.
+
 
 
 
