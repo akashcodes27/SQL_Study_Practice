@@ -1,9 +1,13 @@
+SELECT * FROM Employees 
+#retrieves all columns all rows from table 
 
 
+SELECT name, age FROM Employees 
+#retrieves name,age column, all rows from table 
 
 
-
-
+SELECT emp_id AS id FROM Employees 
+#retrieves emp_id column but column gets renamed as id 
 
 
 
