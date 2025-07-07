@@ -161,6 +161,13 @@ WHERE Department = 'IT';
 
 --------------------------------------------------------------------------------------
 
+Qs19: Get employees from IT department with salary above 60000.
+
+SELECT * FROM Employees 
+WHERE Department = 'IT' AND SALARY > 60000;
+
+-------------------------------------------------------------------------------------
+
 
 
 
