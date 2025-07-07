@@ -10,16 +10,24 @@ This updates all rows under emp_id column to '000'
 We will now see an example combined with WHERE clause 
 
 UPDATE Employees SET emp_name='Unknown User', emp_id='000'
-WHERE Salary < 20000
+WHERE Salary < 20000;
 
 Lets now do some interview level questions 
 --------------------------------------------------------------------------------------
 
 Qs1: Increase the salary of all employees in the IT department by 5000.
 UPDATE Employees SET salary= salary + 5000
-WHERE department = 'IT'
+WHERE department = 'IT';
 
 --------------------------------------------------------------------------------------
+
+Qs2: Change the department of Charlie to "Marketing".
+
+UPDATE Employees SET department='Marketing'
+WHERE name='Charlie';
+
+--------------------------------------------------------------------------------------
+
 
 
 
