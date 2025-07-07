@@ -31,7 +31,14 @@ SELECT * FROM Employees
 WHERE department = 'HR' OR 'SALES' ;  (WRONG XXXXX)
 
 SELECT * FROM Employees 
-WHERE department IN ('HR', 'SALES');
+WHERE department IN ('HR', 'SALES');   (RIGHT)
+
+
+--------------------------------------------------------------------------------------
+
+Qs4: Get employees whose salary is between 45000 and 60000.
+SELECT * FROM Employees 
+WHERE salary BETWEEN 45000 AND 60000;
 
 
 
