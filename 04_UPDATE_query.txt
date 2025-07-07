@@ -42,6 +42,16 @@ WHERE department='HR';
 
 --------------------------------------------------------------------------------------
 
+Qs5: Give a flat 10% raise to all employees.
+
+salary
+salary + (10/100 * salary)
+salary + (0.1 * salary)
+salary(1 + 0.1) = salary * 1.10
+
+UPDATE Employees SET salary = salary * 1.10
+
+---------------------------------------------------------------------------------------
 
 
 
