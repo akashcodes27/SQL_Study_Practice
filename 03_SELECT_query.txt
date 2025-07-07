@@ -91,3 +91,9 @@ GROUP BY department
 
 ------------------------------------------------------------------------------------
 
+qs11: Get departments having more than 1 employee.
+SELECT department FROM Employees 
+GROUP BY department 
+HAVING COUNT(*) > 1   #Used whenever we want to impose condition on a group column
+
+-------------------------------------------------------------------------------------
