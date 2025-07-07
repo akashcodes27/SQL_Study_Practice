@@ -120,4 +120,16 @@ WHERE salary = (
 --------------------------------------------------------------------------------------
 
 Qs15: Get the top 2 highest paid employees 
+SELECT * FROM Employees 
+ORDER BY salary DESC 
+LIMIT 2
+
+#If we want a specific number of employees, we use LIMIT clause 
+We ordered all the rows in terms of Salary descending wise, then we used LIMIT to retrieve the top 2 elements 
+
+-------------------------------------------------------------------------------------
+
+
+
+
 
