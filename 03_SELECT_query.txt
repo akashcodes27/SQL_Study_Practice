@@ -97,3 +97,9 @@ GROUP BY department
 HAVING COUNT(*) > 1   #Used whenever we want to impose condition on a group column
 
 -------------------------------------------------------------------------------------
+
+Qs12: Get the maximum salary from employees.
+SELECT MAX(*) FROM Employee
+
+
+
