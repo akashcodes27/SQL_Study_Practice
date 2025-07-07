@@ -28,7 +28,12 @@ WHERE name='Charlie';
 
 --------------------------------------------------------------------------------------
 
+Qs3: Set the salary of all employees earning less than 50000 to exactly 50000.
 
+UPDATE Employees SET salary=50000
+WHERE salary<50000;
+
+--------------------------------------------------------------------------------------
 
 
 
