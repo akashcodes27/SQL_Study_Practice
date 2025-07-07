@@ -10,6 +10,14 @@ SELECT emp_id AS id FROM Employees
 #retrieves emp_id column but column gets renamed as id 
 
 
+#Lets not take a look at 20 Questions (We have a table generated)
+
+qs1: Get all employees from the IT department
+SELECT name FROM Employees 
+WHERE department = 'IT';
+
+
+
 
 
 
