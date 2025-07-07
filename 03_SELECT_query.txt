@@ -108,3 +108,11 @@ SELECT department DISTINCT FROM Employees  (WRONG XXXX)
 SELECT DISTINCT department FROM Employees (RIGHT) 
 
 --------------------------------------------------------------------------------------
+
+Qs14: Get highest paid employees.
+SELECT * FROM Employees 
+WHERE salary = (
+    SELECT MAX(salary) FROM Employees
+)
+
+
