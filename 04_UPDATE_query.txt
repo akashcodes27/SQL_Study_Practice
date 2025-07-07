@@ -7,9 +7,19 @@ UPDATE Employees SET emp_name='John Doe', emp_id='000'
 This updates all rows under emp_name column to 'John Doe'
 This updates all rows under emp_id column to '000'
 
+We will now see an example combined with WHERE clause 
 
+UPDATE Employees SET emp_name='Unknown User', emp_id='000'
+WHERE Salary < 20000
 
+Lets now do some interview level questions 
+--------------------------------------------------------------------------------------
 
+Qs1: Increase the salary of all employees in the IT department by 5000.
+UPDATE Employees SET salary= salary + 5000
+WHERE department = 'IT'
+
+--------------------------------------------------------------------------------------
 
 
 
